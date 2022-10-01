@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <p id="noworth">Right now it's just JS lol</p>
+    <div class="container-fluid text-center">
+
+        <!-- Name/icon row -->
+
+        <div class="row">
+            <div class="col">
+                <p>Ahmed</p>
+                <p id="ahmedCount">0</p>
+            </div>
+            <div class="col">
+                <p>John</p>
+                <p id="johnCount">0</p>
+            </div>
+            <div class="col">
+                <p>Ben</p>
+                <p id="benCount">0</p>
+            </div>
+            <div class="col">
+                <p>Jacob</p>
+                <p id="jacobCount">0</p>
+            </div>
+        </div>
+
+        <!-- down arrow row-->
+
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-danger" id="ahmedUp">Cost of Glass Cannon</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger" id="johnUp">Looted Chest in Arena</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger" id="benUp">Misclicked again</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger" id="jacobUp">Turned Ahmed into a chicken</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        console.log(document.getElementById("ahmedUp"));
+        document.getElementById("ahmedUp").addEventListener("click", () => {
+            let ahmedCount = document.getElementById("ahmedCount");
+            console.log(Number(ahmedCount.innerText) + 1);
+            ahmedCount.innerText = String(Number(ahmedCount.innerText) + 1);
+        });
+        document.getElementById("johnUp").addEventListener("click", () => {
+            let ahmedCount = document.getElementById("johnCount");
+            console.log(Number(ahmedCount.innerText) + 1);
+            ahmedCount.innerText = String(Number(ahmedCount.innerText) + 1);
+        });
+        document.getElementById("benUp").addEventListener("click", () => {
+            let ahmedCount = document.getElementById("benCount");
+            console.log(Number(ahmedCount.innerText) + 1);
+            ahmedCount.innerText = String(Number(ahmedCount.innerText) + 1);
+        });
+        document.getElementById("jacobUp").addEventListener("click", () => {
+            let ahmedCount = document.getElementById("jacobCount");
+            console.log(Number(ahmedCount.innerText) + 1);
+            ahmedCount.innerText = String(Number(ahmedCount.innerText) + 1);
+        });
+    </script>
+</body>
